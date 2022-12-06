@@ -2,6 +2,6 @@ body{
     background-image: url("../../../assets/login/login-background.png");
 }
 input{
-    width: 30vw;
+    width: 90%;
     border-radius: 10px;
 }
