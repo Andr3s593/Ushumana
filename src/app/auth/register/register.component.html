@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <img class="img-fluid" src="../../../assets/logos/logo1.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Register</h2>
+                        <form action="login">
+                            <label for="email">
+                                <h5>Email</h5>
+                            </label>
+                            <br>
+                            <input type="email" id="email" required>
+                            <br>
+                            <label for="password">
+                                <h5>Contraseña</h5>
+                            </label>
+                            <br>
+                            <input minlength="8" type="password" id="password" required>
+                            <br>
+                            <label for="password-repeat">
+                                <h5>Repetir Contraseña</h5>
+                            </label>
+                            <br>
+                            <input minlength="8" type="password" id="password-repeat" required>
+                            <br>
+                            <label for="edad"><h5>Fecha de Nacimiento</h5></label>
+                            <br>
+                            <input type="date" required>
+                            <br>                            
+                            <br>
+                            
+                            <button type="submmit" class="btn btn-success">Crear Cuenta</button>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <app-footer></app-footer>
+</body>
+
+</html>

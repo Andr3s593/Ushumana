@@ -1,21 +1,25 @@
-import { CommonModule } from '@angular/common';
+import { AuthRoutingModule } from './auth/auth-routing.module';
+import { NotFoundRoutingModule } from './not-found/not-found-routing.module';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { StaticRoutingModule } from './static/static-routing.module';
 import { PagesRoutingModule } from './Pages/pages-routing.module';
-import { HomeComponent } from './Pages/home/home.component';
-import { NgModule, Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes:Routes=[  
-    {path:'home', children:[
-      {path:'**', component:HomeComponent},
+const routes:Routes=[     
       {path:'', redirectTo:'home', pathMatch:'full'},
-    ]}    
-]
+      {path:'**', component:NotFoundComponent}            
+    ]
+
 
 @NgModule({
   declarations: [],
   imports: [        
     RouterModule.forRoot(routes),
-    PagesRoutingModule
+    PagesRoutingModule,
+    StaticRoutingModule,
+    NotFoundRoutingModule,
+    AuthRoutingModule
   ],
   exports:[RouterModule]
 })
