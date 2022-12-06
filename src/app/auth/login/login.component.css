@@ -1,0 +1,7 @@
+body{
+    background-image: url("../../../assets/login/login-background.png");
+}
+input{
+    width: 30vw;
+    border-radius: 10px;
+}
