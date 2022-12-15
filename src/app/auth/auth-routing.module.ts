@@ -4,9 +4,9 @@ import { LoginComponent } from './login/login.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-const routes:Routes =[
+const routes:Routes=[
   {path:'login', component:LoginComponent},
-  {path:'register', component:RegisterComponent},
+  {path:'register', component:RegisterComponent}
 ]
 @NgModule({
   declarations: [],
